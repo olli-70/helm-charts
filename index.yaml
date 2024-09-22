@@ -3,6 +3,16 @@ entries:
   homelab-doc:
   - apiVersion: v2
     appVersion: 1.16.1
+    created: "2024-09-22T08:53:39.336405164Z"
+    description: A Helm chart for Kubernetes
+    digest: 9d82297d08e81ceef7c09e9aa6deda3d9992c18a2c09024e84afbd3d962edc68
+    name: homelab-doc
+    type: application
+    urls:
+    - homelab-doc-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.1
     created: "2024-09-21T12:06:13.042471713Z"
     description: A Helm chart for Kubernetes
     digest: 55f87ed3c3cbe48e5c69c3aaad2df443606b98e5a7e2e78345845dcccb7de6dd
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/olli-70/helm-charts.git/homelab-doc-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-21T12:06:13.042483024Z"
+generated: "2024-09-22T08:53:39.336420302Z"
