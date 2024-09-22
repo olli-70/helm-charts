@@ -64,6 +64,7 @@ externalSecret:
   secretStoreRef:
     name: external-secret-backend  
   targetSecretName: my-secret 
+  remoteRef: my-key-in-secret-store
   dockerCredentials:
     userKey: user
     passwordKey: password
