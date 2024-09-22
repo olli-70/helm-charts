@@ -60,16 +60,13 @@ ingress:
   #      - chart-example.local
 
 externalSecret:
-  name: my-external-secrts-name
+  name: my-es-secret-nyme
   secretStoreRef:
-    name: external-secret-backend  
-  targetSecretName: my-secret 
-  remoteRef: my-key-in-secret-store
-  dockerCredentials:
-    userKey: user
-    passwordKey: password
-    emailKey: email
-    urlKey: url
+    name: my-secret-strore-backend  # Name des SecretStores (z. B. AWS Secrets Manager)
+  targetSecretName: my-target-secret-name  # Der Name des zu erstellenden Kubernetes Secrets
+  remoteRef:
+    key: remote-secret-key
+    property: remote-secret-value 
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
