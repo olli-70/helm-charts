@@ -71,4 +71,15 @@ entries:
     urls:
     - https://github.com/olli-70/helm-charts.git/homelab-doc-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-22T11:13:13.138169133Z"
+  mariadb:
+  - apiVersion: v2
+    appVersion: 10.11.6
+    created: "2024-09-23T18:15:39.836251279Z"
+    description: A Helm chart for Mariadb
+    digest: d68713aafee133087c75a818021605d934d019ddb87c6aa45eb6fdcc356d39cd
+    name: mariadb
+    type: application
+    urls:
+    - mariadb-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-09-23T18:15:39.836273561Z"
