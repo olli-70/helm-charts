@@ -1,0 +1,25 @@
+{{- if .Values.persistence.enabled -}}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mariadb-data-pvc
+{{- with .Values.persistence.annotations  }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
+  labels:
+     {{- include "mariadb.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.sizeData | quote }}
+{{- if .Values.persistence.storageClassNameData }}
+{{- if (eq "-" .Values.persistence.storageClassNameData) }}
+  storageClassName: ""
+{{- else }}
+  storageClassName: "{{ .Values.persistence.storageClassNameData }}"
+{{- end }}
+{{- end }}
+{{- end }}

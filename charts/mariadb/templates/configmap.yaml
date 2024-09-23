@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mariadb-configmap
+data:
+  my.cnf: |
+    [mariadb]
+    bind-address=*
+    default_storage_engine=InnoDB
+    innodb_buffer_pool_size=2048M
+    max_allowed_packet=256M
+    skip-host-cache
+    skip-name-resolve
+    event_scheduler=ON
