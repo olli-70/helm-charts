@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   homelab-doc:
   - apiVersion: v2
+    appVersion: v0.1.18
+    created: "2024-09-25T05:54:26.854136013Z"
+    description: A Helm chart for Kubernetes
+    digest: 0f78abfec73bace7d43de0b3066bae3ca433a7f1cdd5d542bdf92c8d81615d68
+    name: homelab-doc
+    type: application
+    urls:
+    - homelab-doc-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
     appVersion: 1.16.1
     created: "2024-09-22T11:13:13.138134619Z"
     description: A Helm chart for Kubernetes
@@ -110,4 +120,4 @@ entries:
     urls:
     - mariadb-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-24T18:46:13.407059004Z"
+generated: "2024-09-25T05:54:26.854169226Z"
