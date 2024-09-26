@@ -125,4 +125,7 @@ phpmyadmin:
    enable: false
    labels: {}
    serviceType: ClusterIP
+   ingress:
+     annotations: 
+       test1: hallo
 
