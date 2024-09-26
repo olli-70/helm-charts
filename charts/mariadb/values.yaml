@@ -120,3 +120,9 @@ persistence:
   sizeBackup: 30Gi
   storageClassNameData: sc-data-disk
   storageClassNameBackup: sc-backup-disk
+
+phpmyadmin:
+   enable: false
+   labels: {}
+   serviceType: ClusterIP
+
