@@ -1,0 +1,38 @@
+{{- if .Values.phpmyadmin.enable }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpmyadmin
+  labels:
+    app.kubernetes.io/name: mariadb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpmyadmin
+  template:
+    metadata:
+      labels:
+        app: phpmyadmin
+    spec:
+      containers:
+        - name: phpmyadmin
+          image: phpmyadmin
+          ports:
+            - name: phpmyadmin 
+              containerPort: 80
+              protocol: TCP
+          env:
+            - name: PMA_HOST
+              value: {{ include "mariadb.fullname" . }}
+            - name: PMA_PORT
+              value: "3306"
+            - name: PMA_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mariadb-secret
+                  key: root-password
+            - name: PMA_USER
+              value: root
+{{- end }}
+

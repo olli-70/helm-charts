@@ -1,0 +1,26 @@
+{{- if .Values.phpmyadmin.enable }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    {{- if .Values.phpmyadmin.ingress.annotations }}
+    {{- range $key, $value := .Values.phpmyadmin.ingress.annotations }}
+    {{ $key }}: {{ $value | quote }}
+    {{- end }}
+    {{- end }}
+  name: phpmyadmin
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: {{ .Release.Namespace }}-admin.k3s.dorf27.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: phpmyadmin
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+{{- end }}
+
