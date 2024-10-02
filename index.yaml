@@ -141,6 +141,16 @@ entries:
     - mariadb-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
+    appVersion: 2024.9.3
+    created: "2024-10-02T06:18:58.352526332Z"
+    description: A Helm chart home-assiustant based on https://github.com/pajikos/home-assistant-helm-chart
+    digest: cc9ace7e28e4d2cf169c8b8dcf20aa5f39ff34315142cd958a9cb5961591f629
+    name: mariadb
+    type: application
+    urls:
+    - mariadb-0.2.79.tgz
+    version: 0.2.79
+  - apiVersion: v2
     appVersion: 10.11.6
     created: "2024-09-24T04:39:08.536157366Z"
     description: A Helm chart for Mariadb
@@ -160,4 +170,4 @@ entries:
     urls:
     - mariadb-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-01T06:03:11.971017782Z"
+generated: "2024-10-02T06:18:58.352562951Z"
