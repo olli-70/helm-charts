@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  home-assistant:
+  - apiVersion: v2
+    appVersion: 2024.9.3
+    created: "2024-10-02T06:36:31.62172815Z"
+    description: A Helm chart home-assiustant based on https://github.com/pajikos/home-assistant-helm-chart
+    digest: 47bf40d18f1bd413dade29bd8bca26869a8f173e6bb52214fef84b65a1437335
+    name: home-assistant
+    type: application
+    urls:
+    - home-assistant-0.2.79.tgz
+    version: 0.2.79
   homelab-doc:
   - apiVersion: v2
     appVersion: v0.1.19
@@ -170,4 +181,4 @@ entries:
     urls:
     - mariadb-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-02T06:18:58.352562951Z"
+generated: "2024-10-02T06:36:31.621764298Z"
