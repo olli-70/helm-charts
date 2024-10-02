@@ -20,7 +20,7 @@
 #version: 0.2.79
 
 apiVersion: v2
-name: mariadb
+name: home-assistant
 description: A Helm chart home-assiustant based on https://github.com/pajikos/home-assistant-helm-chart
 type: application
 version: 0.2.79
