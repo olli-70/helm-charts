@@ -130,6 +130,17 @@ entries:
     urls:
     - influxdb-2.1.2.tgz
     version: 2.1.2
+  iobroker:
+  - apiVersion: v2
+    appVersion: v10.0.0
+    created: "2024-10-03T04:54:11.343862796Z"
+    description: A Helm chart for Kubernetes
+    digest: d26adce3ae77472aa988d5c6c13af577ec74af31b4823afdb562e1ae6e9cbbdc
+    name: iobroker
+    type: application
+    urls:
+    - iobroker-0.1.0.tgz
+    version: 0.1.0
   mariadb:
   - apiVersion: v2
     appVersion: 10.11.6
@@ -191,4 +202,4 @@ entries:
     urls:
     - mariadb-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-02T06:40:50.539101415Z"
+generated: "2024-10-03T04:54:11.343904143Z"
