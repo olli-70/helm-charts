@@ -1,0 +1,83 @@
+additionalPorts:
+  - name: mqtt
+    containerPort: 1883
+    protocol: TCP     
+  - name: web
+    containerPort: 8082
+    protocol: TCP
+  - name: admin
+    containerPort: 8081
+    protocol: TCP
+  - name: hm-rfd
+    containerPort: 2001
+    protocol: TCP 
+  - name: hm-wired
+    containerPort: 2000
+    protocol: TCP 
+  - name: hm-ip
+    containerPort: 2010
+    protocol: TCP 
+  - name: hm-vd
+    containerPort: 9292
+    protocol: TCP 
+  - name: hm-rfds
+    containerPort: 42001
+    protocol: TCP 
+  - name: hm-wireds
+    containerPort: 42000
+    protocol: TCP 
+  - name: hm-ips
+    containerPort: 42010
+    protocol: TCP 
+  - name: hm-vds
+    containerPort: 49292
+    protocol: TCP 
+
+
+service:
+  type: ClusterIP
+  lbIP: 192.168.50.70
+  - name: mqtt
+    port: 1883
+    targetPort: mqtt
+    protocol: TCP     
+  - name: web
+    port: 8082
+    targetPort: web
+    protocol: TCP
+  - name: admin
+    port: 8081
+    targetPort: admin
+    protocol: TCP
+  - name: hm-rfd
+    port: 2001
+    targetPort: hm-rfd
+    protocol: TCP 
+  - name: hm-wired
+    port: 2000
+    targetPort: hm-wired
+    protocol: TCP 
+  - name: hm-ip
+    port: 2010
+    targetPort: hm-ip
+    protocol: TCP 
+  - name: hm-vd
+    port: 9292
+    targetPort: hm-vd
+    protocol: TCP 
+  - name: hm-rfds
+    port: 42001
+    targetPort: hm-rfds
+    protocol: TCP 
+  - name: hm-wireds
+    port: 42000
+    targetPort: hm-wireds
+    protocol: TCP 
+  - name: hm-ips
+    port: 42010
+    targetPort: hm-ips
+    protocol: TCP 
+  - name: hm-vds
+    port: 49292
+    targetPort: hm-vds
+    protocol: TCP 
