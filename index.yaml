@@ -154,6 +154,16 @@ entries:
   mariadb:
   - apiVersion: v2
     appVersion: 10.11.6
+    created: "2024-10-22T17:33:43.763304905Z"
+    description: A Helm chart for Mariadb
+    digest: 83035d7cc085933c51b600015c7a133fbc23e2b250031774b2a45611f8f3cb78
+    name: mariadb
+    type: application
+    urls:
+    - mariadb-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
+    appVersion: 10.11.6
     created: "2024-09-26T18:35:26.10299646Z"
     description: A Helm chart for Mariadb
     digest: 2692de44f5967e75ef934fa9aa1bc2f1bc37d3cacf512af032c06330980a83d6
@@ -212,4 +222,4 @@ entries:
     urls:
     - mariadb-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-03T15:27:48.171445245Z"
+generated: "2024-10-22T17:33:43.763358975Z"
