@@ -42,6 +42,8 @@ spec:
                - -c
                - mysqladmin -u root -p${MYSQL_ROOT_PASSWORD} ping
              periodSeconds: 10
+             timeoutSeconds: 9
+             failureThreshold: 6
           startupProbe:
              exec:
                command:
